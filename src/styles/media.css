@@ -1,0 +1,222 @@
+@media (max-width: 1170px) {
+    .vacancies{
+        padding: 171px 0 512px;
+    }
+}
+@media (max-width: 1000px) {
+  .videos__gallery {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .videos__item{
+      padding-bottom: 30px;
+  }
+  .videos__item + .videos__item {
+    margin-left: 0;
+  }
+  .videos__item-img {
+    width: 100%;
+  }
+  
+  .social__inner::before {
+    display: none;
+  }
+  .social__inner::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px 0 19px;
+  }
+  .header {
+    padding: 20px 0;
+  }
+  .header__logo,
+  .footer__logo {
+    width: 183px;
+    height: 23px;
+    background-size: contain;
+  }
+  .header__logo::before,
+  .footer__logo::before {
+    width: 127px;
+    height: 30px;
+    background-size: contain;
+    transform: translateY(-50%) rotate(0);
+    left: 80%;
+  }
+  .header__menu-btn {
+    display: block;
+  }
+
+  .postcard {
+    padding: 66px 0 245px;
+    background-position: center bottom;
+    background-size: contain;
+  }
+  .postcard__inner {
+    height: unset;
+  }
+  .postcard__wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .postcard__title {
+    font-size: 39px;
+    padding: 0 20px;
+  }
+  .postcard__text {
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    margin-left: unset;
+    text-align: center;
+  }
+
+  .videos {
+    padding: 37px 0 165px;
+  }
+  .videos__item {
+    margin-bottom: 35px;
+  }
+  .videos__gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videos__item + .videos__item {
+    margin-left: 0;
+  }
+  .videos__item-img {
+    width: 100%;
+  }
+  .videos__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .videos__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .videos__item-img {
+    margin-bottom: 23px;
+  }
+  .videos__item-name {
+    margin-bottom: 14px;
+  }
+  .videos__item-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .collection {
+    height: 728px;
+  }
+  .collection__inner {
+    padding: 36px 23px 354px 27px;
+    max-width: unset;
+    width: 89.31%;
+    height: 734px;
+  }
+  .collection__content {
+    position: unset;
+    max-width: unset;
+  }
+  .collection__title {
+    font-size: 30px;
+    line-height: 100%;
+  }
+  .collection__slogan {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .collection__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .collection__inner--bg {
+    display: none;
+  }
+  .collection__inner--bg-mobile {
+    display: block;
+    width: 100%;
+    height: 573px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-radius: 20px;
+    z-index: -10;
+  }
+
+  .vacancies {
+    /* padding: 45px 0 389px; */
+    overflow: hidden;
+    z-index: 0;
+  }
+  .vacancies__inner--bg {
+    width: 128%;
+    background-size: contain;
+    background-position: center bottom;
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  .vacancies__content {
+    z-index: 10;
+    position: relative;
+  }
+  .vacancies__text {
+    font-size: 30px;
+    max-width: unset;
+  }
+  .vacancies__btn--link {
+    width: 95%;
+    text-align: center;
+  }
+
+  .social__inner::before {
+    display: none;
+  }
+  .social__inner::after {
+    display: none;
+  }
+  .social__slogan {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  
+  .social__icons {
+    max-width: 234px;
+  }
+  .social__icons-link {
+    width: 48.88px;
+    height: 48.88px;
+    background-size: contain;
+  }
+  .social__icons-link::after {
+    width: 48.88px;
+    height: 48.88px;
+  }
+
+  .footer {
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 30px;
+  }
+}
+@media(max-width: 375px) {
+    .vacancies {
+        padding: 45px 0 389px;
+        overflow: hidden;
+        z-index: 0;
+      }
+}

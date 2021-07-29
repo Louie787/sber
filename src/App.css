@@ -1,38 +1,438 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url('./fonts/SBSansDisplay-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url('./fonts/SBSansDisplay-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url('./fonts/SBSansDisplay-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url('./fonts/SBSansDisplay-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SBSansText';
+  src: url('./fonts/SBSansText-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SBSansText';
+  src: url('./fonts/SBSansText-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'SBSansDisplay';
+  background-image: url('./assets/bg/bg-body.png');
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  /* max-width: 1440px;
+  width: 100%;
+  margin: 0 auto; */
+  
+  /* overflow: hidden; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  max-width: 1270px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.postcard{
+  
+  background-repeat: no-repeat;
+ 
+  background-position: 102% 0;
+  
+}
+.postcard__inner{
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  height: 567px;
+}
+.postcard__content{
+  max-width: 532px;
+  width: 100%;
+}
+.postcard__title{
+  font-weight: 300;
+  font-size: 68px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+.postcard__title span{
+  font-weight: 600;
+}
+.postcard__wrap{
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.postcard__text{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin-left: 23px;
+  max-width: 383px;
+  width: 100%;
+  padding-bottom: 96px;
+}
+.postcard__btn--down{
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-image: url('./assets/icons/btn-down.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.postcard__btn--down:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.videos{
+  padding: 83px 0 198px;
+  background: linear-gradient(100.89deg, #107F8B 2.15%, #1F9C97 44.78%, #30BDA4 87.42%);
+  color: #fff;
+}
+.videos__title{
+  font-size: 30px;
+  line-height: 38px;
+  font-family: 'SBSansText';
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.videos__title span{
+  display: block;
+}
+.videos__text{
+  font-family: 'SBSansText';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 467px;
+  width: 100%;
+  padding-bottom: 17px;
+  margin-bottom: 70px;
+}
+.videos__gallery{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.videos__item+.videos__item{
+  margin-left: 63px;
+}
+.videos__item{
+  max-width: 357px;
+  width: 100%;
+}
+.videos__item-img{
+   max-width: 355px;
+   height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 10px; 
+  overflow: hidden;
+  margin-bottom: 32px;
+  position: relative;
+}
+.videos__item-img .btn-play{
+  width: 54px;
+  height: 54px;
+  background-image: url('./assets/icons/btn-play.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 12px;
+  bottom: 8px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.videos__item-img .btn-play::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all .2s;
+}
+.videos__item-img .btn-play:hover::after{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.videos__item-img img{
+  width: 100%;
+  object-fit: none;
+  object-position: -13px -1px;
+}
+.videos__item-name{
+  font-size: 24px;
+  line-height: 90%;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.videos__item-text{
+  font-family: 'SBSansText';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.collection{
+  height: 525px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.collection__inner{
+  position: absolute;
+  max-width: 1240px;
+  width: 100%;
+  height: 482px;
+  padding: 95px 105px 67px;
+  background: #FFFFFF;
+  box-shadow: 0px 47px 67px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -74px;
+}
+.collection__inner--bg{
+  max-width: 1240px;
+  width: 100%;
+  height: 573px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.collection__inner--bg-mobile{
+  display: none;
+}
+.collection__content{
+  max-width: 667px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.collection__title{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.collection__title span{
+  display: block;
+  font-weight: 700;
+}
+.collection__slogan{
+  font-family: 'SBSansText';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+.collection__text{
+  font-family: 'SBSansText';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 376px;
+  width: 100%;
+  color: #334047;
+  margin-bottom: 28px;
+}
+.collection__btn--link{
+  padding: 25px 64px 24px 64px;
+  background-color: #107F8C;
+  border-radius: 37px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 80%;
+  text-align: center;
+  font-family: 'SBSansText';
+  font-weight: 700;
+  transition: all .2s;
+}
+.collection__btn--link:hover{
+  background-color: #0a4f57;
+}
+
+.vacancies{
+  padding: 171px 0 112px;
+  background-color: #F2F2F2;
+  position: relative;
+}
+.vacancies__inner--bg{
+  width: 100%;
+  height: 573px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  bottom: 0;
+  right: 0;
+}
+.vacancies__content{
+  position: relative;
+  z-index: 1;
+}
+.vacancies__text{
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  max-width: 627px;
+  width: 100%;
+  margin-bottom: 34px;
+}
+.vacancies__text span{
+  font-weight: 700;
+}
+
+.vacancies__btn--link{
+  padding: 25px 35px;
+  background-color: #107F8C;
+  border-radius: 40px;
+  font-family: 'SBSansText';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 80%;
+  letter-spacing: -0.07em;
+  color: #FFFFFF;
+  transition: all .2s;
+}
+.vacancies__btn--link:hover{
+  background-color: #0a4f57;
+}
+
+.social{
+  padding: 272px 0 120px;
+
+}
+.social__inner{
+  position: relative;
+}
+.social__inner::before{
+  content: '';
+  position: absolute;
+  background-image: url('./assets/decor/decor-sicial-img-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 277px;
+  height: 179px;
+  
+}
+.social__inner::after{
+  content: '';
+  position: absolute;
+  background-image: url('./assets/decor/decor-sicial-img-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 214px;
+  height: 260px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  
+}
+.social__slogan{
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  max-width: 649px;
+  width: 100%;
+  margin: 0 auto 30px;
+  position: relative;
+}
+.social__slogan::after{
+  content: '';
+  position: absolute;
+  background-image: url('./assets/decor/decor-sicial-img-2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 216px;
+  height: 220px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social__icons{
+  max-width: 361px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.social__icons-link{
+  width: 61px;
+  height: 61px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.social__icons-link::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all .2s;
+}
+.social__icons-link:hover::after{
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

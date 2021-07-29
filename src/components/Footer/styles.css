@@ -1,0 +1,48 @@
+.footer{
+  font-family: 'SBSansText';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #8F909D;
+  padding-bottom: 162px;
+}
+.footer a{
+  color: #8F909D;
+}
+.footer__top{
+  margin-bottom: 36px;
+}
+.footer__content-adress,
+.footer__content-email,
+.footer__phones,
+.footer__content-license{
+  margin-bottom: 20px;
+}
+.footer .footer__content-policy{
+  color: #21A038;
+  transition: all .2s;
+}
+.footer .footer__content-policy:hover{
+  color: #19c93a;
+}
+.footer__logo{
+  width: 255px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.footer__logo::before{
+  content: '';
+  position: absolute;
+  width: 207px;
+  height: 39px;
+  background-image: url('../../assets/logo/logo-driwings.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 88%;
+  top: 50%;
+  transform: translateY(-50%) rotate(2.16deg);
+}
