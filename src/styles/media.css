@@ -2,6 +2,10 @@
     .vacancies{
         padding: 171px 0 512px;
     }
+    .postcard{
+      background-position: 100% 112%;
+      background-size: 50%;
+    }
 }
 @media (max-width: 1000px) {
   .videos__gallery {
