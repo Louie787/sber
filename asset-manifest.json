@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sber/static/css/main.b75f2877.chunk.css",
+    "main.css": "/sber/static/css/main.7c28b530.chunk.css",
     "main.js": "/sber/static/js/main.05709f67.chunk.js",
     "main.js.map": "/sber/static/js/main.05709f67.chunk.js.map",
     "runtime-main.js": "/sber/static/js/runtime-main.13aa4bdb.js",
@@ -10,14 +10,14 @@
     "static/js/3.318481da.chunk.js": "/sber/static/js/3.318481da.chunk.js",
     "static/js/3.318481da.chunk.js.map": "/sber/static/js/3.318481da.chunk.js.map",
     "index.html": "/sber/index.html",
-    "static/css/main.b75f2877.chunk.css.map": "/sber/static/css/main.b75f2877.chunk.css.map",
+    "static/css/main.7c28b530.chunk.css.map": "/sber/static/css/main.7c28b530.chunk.css.map",
     "static/js/2.3e52ef53.chunk.js.LICENSE.txt": "/sber/static/js/2.3e52ef53.chunk.js.LICENSE.txt",
     "static/media/App.css": "/sber/static/media/decor-sicial-img-3.ab0ff969.png"
   },
   "entrypoints": [
     "static/js/runtime-main.13aa4bdb.js",
     "static/js/2.3e52ef53.chunk.js",
-    "static/css/main.b75f2877.chunk.css",
+    "static/css/main.7c28b530.chunk.css",
     "static/js/main.05709f67.chunk.js"
   ]
 }
