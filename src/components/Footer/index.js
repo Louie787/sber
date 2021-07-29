@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__content-license">Генеральная лицензия на осуществление банковских операций от 11 августа 2015 года. Регистрационный номер — 1481.</div>
-          <a className="footer__content-policy" href="#">Политика конфиденциальности</a>
+          <a className="footer__content-policy" href="https://sberbusiness.live/privacy" target="_blank">Политика конфиденциальности</a>
         </div>
       </div>
     </div>
