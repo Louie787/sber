@@ -2,12 +2,12 @@ import './styles.css';
 
 const Header = () => {
   return (
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
+    <header className="header">
+      <div className="container">
+        <div className="header__inner">
           <a
             href="#"
-            class="header__logo"
+            className="header__logo"
             style={{backgroundImage: 'url(./assets/logo/logo.png)'}}
           ></a>
           

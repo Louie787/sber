@@ -47,9 +47,9 @@ function App() {
             </p>
             <div class="videos__gallery">
               <div class="videos__item">
-                <div class="videos__item-img">
+                <div class="videos__item-img" onClick={() => setPopupIsVisible(true)}>
                   <img src="./assets/content/artem.png" alt="" />
-                  <div class="btn-play" onClick={() => setPopupIsVisible(true)}></div>
+                  <div class="btn-play"></div>
                 </div>
                 <div class="videos__item-name">Артем</div>
                 <div class="videos__item-text">
@@ -64,9 +64,9 @@ function App() {
                 </div>}
               </div>
               <div class="videos__item">
-                <div class="videos__item-img">
+                <div class="videos__item-img" onClick={() => setPopupIsVisible(false)}>
                   <img src="./assets/content/lera.png" alt="" />
-                  <div class="btn-play" onClick={() => setPopupIsVisible(true)}></div>
+                  <div class="btn-play" ></div>
                 </div>
                 <div class="videos__item-name">Лера</div>
                 <div class="videos__item-text">
@@ -81,9 +81,9 @@ function App() {
                 </div>}
               </div>
               <div class="videos__item">
-                <div class="videos__item-img">
+                <div class="videos__item-img" onClick={() => setPopupIsVisible(true)}>
                   <img src="./assets/content/mark.png" alt="" />
-                  <div class="btn-play" onClick={() => setPopupIsVisible(true)}></div>
+                  <div class="btn-play" ></div>
                 </div>
                 <div class="videos__item-name">Марк</div>
                 <div class="videos__item-text">
