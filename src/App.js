@@ -1,15 +1,18 @@
+import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 import './styles/normalize.css';
 import './styles/reset.css';
 import './App.css';
 import './styles/media.css';
 
 function App() {
-  return (
-    <>
-      <Header />
+  const [popupIsVisible, setPopupIsVisible] = useState(false);
 
+  return (
+    <>      
+      <Header />
       <section
         class="postcard"
         style={{backgroundImage: 'url(./assets/bg/bg-postcard.png)'}}
@@ -46,7 +49,7 @@ function App() {
               <div class="videos__item">
                 <div class="videos__item-img">
                   <img src="./assets/content/artem.png" alt="" />
-                  <div class="btn-play"></div>
+                  <div class="btn-play" onClick={() => setPopupIsVisible(true)}></div>
                 </div>
                 <div class="videos__item-name">Артем</div>
                 <div class="videos__item-text">
@@ -54,11 +57,16 @@ function App() {
                   папа работает на машине, похожей на самолёт, и проводит
                   инкассацию нажатием одной кнопки.
                 </div>
+                { popupIsVisible && <div className="popup" onClick={() => setPopupIsVisible(false)}>
+                  <div className="popup__inner">
+                    <iframe src="https://player.vimeo.com/video/580789406?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>}
               </div>
               <div class="videos__item">
                 <div class="videos__item-img">
                   <img src="./assets/content/lera.png" alt="" />
-                  <div class="btn-play"></div>
+                  <div class="btn-play" onClick={() => setPopupIsVisible(true)}></div>
                 </div>
                 <div class="videos__item-name">Лера</div>
                 <div class="videos__item-text">
@@ -66,17 +74,27 @@ function App() {
                   непростые ящики, которые умеют разукрашивать. А у одного из
                   инкассаторов есть даже торт — Лера же просила!
                 </div>
+                { popupIsVisible && <div className="popup" onClick={() => setPopupIsVisible(false)}>
+                  <div className="popup__inner">
+                    <iframe src="https://player.vimeo.com/video/580789598?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>}
               </div>
               <div class="videos__item">
                 <div class="videos__item-img">
                   <img src="./assets/content/mark.png" alt="" />
-                  <div class="btn-play"></div>
+                  <div class="btn-play" onClick={() => setPopupIsVisible(true)}></div>
                 </div>
                 <div class="videos__item-name">Марк</div>
                 <div class="videos__item-text">
                   Быстрее гепарда, супергероев и даже ветра! Марк уверен:
                   инкассатора победить не просто. Особенно если это его папа.
                 </div>
+                { popupIsVisible && <div className="popup" onClick={() => setPopupIsVisible(false)}>
+                  <div className="popup__inner">
+                    <iframe src="https://player.vimeo.com/video/580790869?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>}
               </div>
             </div>
           </div>
